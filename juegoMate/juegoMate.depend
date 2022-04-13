@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1649268706 source:d:\pe2022\juegomate\main.c
+	<stdio.h>
+	<locale.h>
+	<stdlib.h>
+	<time.h>
+	"operaciones.h"
+
+1649268481 d:\pe2022\juegomate\operaciones.h
+
