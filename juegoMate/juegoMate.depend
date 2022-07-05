@@ -8,3 +8,18 @@
 
 1649268481 d:\pe2022\juegomate\operaciones.h
 
+1656856559 source:c:\users\lucas\onedrive\escritorio\proyectos c\juegomate\main.c
+	<stdio.h>
+	<locale.h>
+	<stdlib.h>
+	"prototipos.h"
+
+1656857127 c:\users\lucas\onedrive\escritorio\proyectos c\juegomate\prototipos.h
+
+1656856504 source:c:\users\lucas\onedrive\escritorio\proyectos c\juegomate\funcinoes.c
+	<stdio.h>
+	<locale.h>
+	<stdlib.h>
+	<time.h>
+	"prototipos.h"
+

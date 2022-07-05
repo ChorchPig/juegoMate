@@ -1,20 +1,22 @@
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
-#include <time.h>
-#include "headers/mate.h"
+#include "prototipos.h"
+
 int main(){
     setlocale(LC_ALL, "spanish");
-    int op;
-    while(op !=4){
-        srand(time(0));
-        int num1=rand()%10, num2=rand()%10;
-        printf("¿Qué operación vas a practicar?\n1.Suma 2.Resta 3.Multiplicación 4.Quiero salir\n");
-        scanf("%i", &op);
-        if(op!=4)calcularRespuesta(num1, num2, op);
-        else{
-            printf("Estás por salir de la aplicación, presioná 4 para confirmar.\n");
-            scanf("%i", &op);
+    int option=1, puntaje=0;
+    while(option!=0){ //Inicio de menú
+        printf("Seleccione una opción: \n");
+        printf("\t1. Juego de álgebra \n\t2. Juego de Geografía\n\t3. Mostrar puntaje\n");
+        printf("\t0. Salir del programa \n");
+        scanf("%i", &option);
+        switch(option){
+            case 0: confirmarSalida(&option); break;
+            case 1: juegoAlgebra(&puntaje); break;
+            case 2: printf("Ud. se encuentra en la función 'juegoGeometria'.\n"); break;
+            case 3: printf("Puntaje actual: %i\n", puntaje); break;
+            default : printf("No se seleccionó una opción existente");
         }
     }
     return 0;
